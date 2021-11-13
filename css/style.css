@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap");
+* {
+  font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+}
+body {
+  background-color: #ecf0f1;
+}
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.LRLine {
+  position: relative;
+}
+.LRLine::before,
+.LRLine::after {
+  content: "";
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  height: 2px;
+  background-color: black;
+}
+.LRLine::before {
+  left: -60%;
+}
+.LRLine::after {
+  right: -60%;
+}
+
+/* NavBar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 10px #b5b5b5;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  top: 0;
+  z-index: 99;
+}
+.headerBox {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.headerBox_icon {
+  width: 100px;
+  height: 100px;
+}
+.headerOption {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+.headerOption > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* 主視覺 */
+.masterVision {
+  background-image: url("../image/mainBg.jpg");
+  height: 90vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.masterVision:after {
+  content: "";
+  width: 100%;
+  height: 90vh;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.masterVision_title {
+  padding: 5% 10%;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+.masterVision_title > span {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.cnTitle {
+  font-size: 6.5rem;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: lighter;
+}
+.enTitle {
+  font-size: 2.5rem;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 關於古都 */
+.aboutKyoto {
+  position: relative;
+  padding: 2rem;
+}
+
+.aboutImg {
+  position: absolute;
+  left: 10%;
+  top: -7%;
+  box-shadow: 0 0 20px black;
+  border-bottom: 5px solid white;
+  max-width: 30%;
+}
+.aboutImg img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.aboutList {
+  background-color: #ecf0f1;
+  width: 50%;
+  position: relative;
+  left: 45%;
+}
+.listBox {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.listBox > li {
+  margin-bottom: 1.2rem;
+}
+
+.listBox > li > p {
+  font-size: 1rem;
+  color: rgb(68, 68, 68);
+  line-height: 1.1rem;
+}
+
+/* 經典美食 */
+.delicacy {
+  background-image: url("../image/foodBg.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 10% 10% 5%;
+  background-attachment: fixed;
+}
+.delicacy_title {
+  color: white;
+  backdrop-filter: blur(10px);
+  font-weight: lighter;
+  text-align: center;
+  padding: 60px 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.delicacy_title h2 {
+  font-size: 3.5rem;
+  letter-spacing: 10px;
+}
+.delicacy_title > span {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+.foods {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #b5b5b5;
+  margin: 0 20px;
+  position: relative;
+}
+.card > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center center;
+}
+.card > p {
+  text-align: center;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card > span {
+  color: rgb(68, 68, 68);
+  line-height: 1.1rem;
+}
+.card > button {
+  margin: 5px auto 0;
+}
+.btn {
+  display: block;
+  border: 2px solid transparent;
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 5px;
+  outline: none;
+}
+.btn > i {
+  margin-left: 3px;
+}
+.btn > span {
+  font-weight: bold;
+}
+.btn_primary {
+  background-color: #2f3640;
+  color: white;
+  transition: 0.128s;
+}
+.btn_primary:hover {
+  background-color: #0d0e11;
+  color: white;
+}
+
+/* 山光水色 */
+.landscape {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10% 2%;
+  background-color: #ededea;
+  border-radius: 5px;
+  box-shadow: 0 0 75px #b5b5b5;
+  max-height: 600px;
+  overflow: hidden;
+}
+.landscape_content {
+  flex: 1;
+  padding: 30px;
+}
+.landscape_origin {
+  width: 12%;
+  text-align: center;
+  border: 5px solid #b1943f;
+  position: relative;
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+.landscape_origin::after {
+  padding-bottom: 100%;
+  content: "";
+  display: block;
+}
+.landscape_origin > div {
+  color: #e6c152;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 75%;
+  left: 75%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.landscape_title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.landscape_point {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+  display: block;
+}
+.landscape_text {
+  width: 50%;
+  margin: 0 auto;
+  line-height: 2rem;
+}
+#daigoji {
+  flex: 1;
+  background-image: url("../image/daigoji.jpg");
+  height: 0;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+}
+#KifuneJinja {
+  flex: 1;
+  background-image: url("../image/kifunejinja.jpg");
+  height: 0;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+}
+#hozukyo {
+  flex: 1;
+  background-image: url("../image/hozukyo.jpg");
+  height: 0;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
