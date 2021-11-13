@@ -237,7 +237,6 @@ header {
   background-color: #ededea;
   border-radius: 5px;
   box-shadow: 0 0 75px #b5b5b5;
-  max-height: 600px;
   overflow: hidden;
 }
 .landscape_content {
@@ -286,22 +285,16 @@ header {
 #daigoji {
   flex: 1;
   background-image: url("../image/daigoji.jpg");
-  height: 0;
-  padding-bottom: 100%;
   background-repeat: no-repeat;
 }
 #KifuneJinja {
   flex: 1;
   background-image: url("../image/kifunejinja.jpg");
-  height: 0;
-  padding-bottom: 100%;
   background-repeat: no-repeat;
 }
 #hozukyo {
   flex: 1;
   background-image: url("../image/hozukyo.jpg");
-  height: 0;
-  padding-bottom: 100%;
   background-repeat: no-repeat;
   background-position-x: center;
 }
