@@ -308,6 +308,9 @@ footer {
   background-color: #65044e;
   color: #e6c152;
   font-size: 1.25rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 .footerInfo {
   display: flex;
